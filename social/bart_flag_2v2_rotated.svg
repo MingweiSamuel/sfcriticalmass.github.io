@@ -1,0 +1,15 @@
+<svg width="200" height="120" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+<style type="text/css">
+  path {
+    fill: none;
+    stroke-linecap: square;
+    stroke-width: 20;
+  }
+</style>
+<rect x="0" y="0" width="200" height="120" fill="#fff" />
+<path d="M 200,96 L 86,96 C 70,96 62,104 62,120" stroke="#ee1c25" />
+<path d="M 200,72 L 38,72 C 22,72 14,80 14,96 L 14,120" stroke="#ffe700" />
+<path d="M 200,48 L 38,48 C 14,48 14,48 -3,31" stroke="#00adee" />
+<path d="M 200,24 L 82,24 C 58,24 58,24 41,7 L 34,0" stroke="#4cb847" />
+<path d="M 38,120 L 38,62 C 38,38 38,38 21,21 L 0,0" stroke="#fba61c" />
+</svg>

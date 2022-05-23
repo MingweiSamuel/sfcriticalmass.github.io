@@ -1,0 +1,19 @@
+<svg width="200" height="120" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <style type="text/css">
+    path {
+      fill: none;
+      stroke-linecap: square;
+    }
+    .inner {
+      stroke-width: 24;
+    }
+  </style>
+
+  <rect x="0" y="0" width="200" height="120" fill="#fff" />
+
+  <path d="M 0,24 L 140,24 L 140,0" class="inner" stroke="#ee1c25" />
+  <path d="M 0,48 L 188,48 L 188,0" class="inner" stroke="#ffe700" />
+  <path d="M 0,72 L 188,72 L 188,120" class="inner" stroke="#00adee" />
+  <path d="M 0,96 L 146.5,96 L 170.5,120" class="inner" stroke="#4cb847" />
+  <path d="M 164,0 L 164,79.5 L 204.5,120" class="inner" stroke="#fba61c" />
+</svg>

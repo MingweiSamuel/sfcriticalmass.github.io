@@ -7,13 +7,13 @@
             map: {
                 center: [37.75, -122.45],
                 zoom: 12,
-                fullscreenControl: false,
-                resizerControl: true,
+                fullscreenControl: true,
+                resizerControl: false,
                 preferCanvas: true,
-                rotate: true,
-                // bearing: 45,
-                rotateControl: {
-                    closeOnZeroBearing: true
+                rotate: false,
+
+                scaleControl: {
+                    position: "topleft",
                 },
             },
             elevationControl: {
@@ -33,14 +33,11 @@
                     slope: false,
                     acceleration: false,
 
-                    // time: "summary",
                     legend: true,
                     followMarker: true,
                     almostOver: true,
-                    // distanceMarkers: true,
+                    distanceMarkers: true,
                     hotline: false,
-
-                    // added:
                     closeBtn: false,
                 },
             },
@@ -54,9 +51,9 @@
         const map = L.map('{{ md5 (.Get "gpx") }}', opts.map);
 
         const controlElevation = L.control.elevation(opts.elevationControl.options).addTo(map);
-        const controlLayer = L.control.layers(null, null, opts.layersControl.options);
 
-        controlElevation.on('eledata_loaded', ({ layer, name }) => controlLayer.addTo(map) && layer.eachLayer((trkseg) => trkseg.feature.geometry.type != "Point" && controlLayer.addOverlay(trkseg, trkseg.feature && trkseg.feature.properties && trkseg.feature.properties.name || name)));
+        // const controlLayer = L.control.layers(null, null, opts.layersControl.options);
+        // controlElevation.on('eledata_loaded', ({ layer, name }) => controlLayer.addTo(map) && layer.eachLayer((trkseg) => trkseg.feature.geometry.type != "Point" && controlLayer.addOverlay(trkseg, trkseg.feature && trkseg.feature.properties && trkseg.feature.properties.name || name)));
 
         controlElevation.load(opts.elevationControl.url);
     })();

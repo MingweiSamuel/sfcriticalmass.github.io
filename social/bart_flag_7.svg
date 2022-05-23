@@ -1,0 +1,8 @@
+<svg width="200" height="120" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="200" height="120" fill="#fff" />
+  <path d="M 0,12 L 0,36 L 140,36 L 140,0 L 116,0 L 116,12 Z" fill="#ee1c25" />
+  <path d="M 0,36 L 0,60 L 188,60 L 188,0 L 164,0 L 164,36 Z" fill="#ffe700" />
+  <path d="M 0,60 L 0,84 L 174,84 L 200,110 L 200,72 L 188,60 Z" fill="#00adee" />
+  <path d="M 0,84 L 0,108 L 128,108 L 140,120 L 176,120 L 140,84 Z" fill="#4cb847" />
+  <path d="M 164,0 L 140,0 L 140,84 L 176,120 L 212,120 L 164,72 Z" fill="#fba61c" />
+</svg>

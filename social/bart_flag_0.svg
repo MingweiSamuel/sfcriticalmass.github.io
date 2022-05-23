@@ -1,0 +1,32 @@
+<svg width="200" height="120" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    path {
+      fill: none;
+      stroke-linecap: square;
+    }
+    .outer {
+      stroke: #4d4d4f;
+      stroke-width: 18;
+    }
+    .inner {
+      stroke-width: 12;
+    }
+  </style>
+
+  <rect x="0" y="0" width="200" height="120" fill="#fff" />
+
+  <path d="M 0,24 L 138,24 L 138,0" class="outer" />
+  <path d="M 0,24 L 138,24 L 138,0" class="inner" stroke="#ee1c25" />
+
+  <path d="M 0,48 L 186,48 L 186,0" class="outer" />
+  <path d="M 0,48 L 186,48 L 186,0" class="inner" stroke="#ffe700" />
+
+  <path d="M 0,72 L 186,72 L 200,86" class="outer" />
+  <path d="M 0,72 L 186,72 L 200,86" class="inner" stroke="#00adee" />
+
+  <path d="M 0,96 L 142,96 L 166,120" class="outer" />
+  <path d="M 0,96 L 142,96 L 166,120" class="inner" stroke="#4cb847" />
+
+  <path d="M 162,0 L 162,82 L 200,120" class="outer" />
+  <path d="M 162,0 L 162,82 L 200,120" class="inner" stroke="#fba61c" />
+</svg>
